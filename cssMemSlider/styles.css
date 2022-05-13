@@ -71,12 +71,14 @@ input[type="radio"] {
 .meme-text {
   margin: 0;
   font-size: 1rem;
+  line-height: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .controls {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
   width: 25%;
 }
 
