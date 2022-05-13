@@ -1,0 +1,190 @@
+body {
+  background-color: #F6F6F6;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.slider {
+  margin: 20vh auto 0;
+  max-width: 80vw;
+  max-height: 70vh;
+  height: auto;
+  aspect-ratio: 10 / 11;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  gap: 1.5rem 0;
+}
+
+.meme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 60vh;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  overflow-x: hidden;
+  border-radius: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.meme-wrapper {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 100%);
+  transition: 0.5s;
+}
+
+.meme {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 5 / 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meme-image {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.meme-text-container {
+  width: 75%;
+  overflow-x: hidden;
+}
+
+.meme-text-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 100%);
+  transition: 0.5s;
+}
+
+.meme-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 25%;
+}
+
+label {
+  display: flex;
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  justify-content: center;
+  align-items: center;
+}
+
+label .control {
+  width: 0.75rem;
+  aspect-ratio: 1 / 1;
+  border: 0.1rem solid rgba(3, 141, 233, 0.986);
+  border-radius: 50%;
+  background-color: rgba(3, 141, 233, 0.986);
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+label:hover .control {
+  border: 0.1rem solid #696969;
+  background-color: #696969;
+}
+
+label:active .control {
+  border: 0.1rem solid #444444;
+  background-color: #444444;
+}
+
+#meme1:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(0%);
+}
+
+#meme1:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(0%);
+}
+
+#meme1:checked ~ .controls .meme1 .control {
+  background-color: transparent;
+}
+
+#meme2:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-100%);
+}
+
+#meme2:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-100%);
+}
+
+#meme2:checked ~ .controls .meme2 .control {
+  background-color: transparent;
+}
+
+#meme3:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-200%);
+}
+
+#meme3:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-200%);
+}
+
+#meme3:checked ~ .controls .meme3 .control {
+  background-color: transparent;
+}
+
+#meme4:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-300%);
+}
+
+#meme4:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-300%);
+}
+
+#meme4:checked ~ .controls .meme4 .control {
+  background-color: transparent;
+}
+
+#meme5:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-400%);
+}
+
+#meme5:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-400%);
+}
+
+#meme5:checked ~ .controls .meme5 .control {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .slider {
+    max-width: 90vw;
+    gap: 1.5rem;
+  }
+
+  .controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .meme-text-container {
+    width: 100%;
+    order: 1;
+  }
+}
