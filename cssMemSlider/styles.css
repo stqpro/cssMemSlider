@@ -110,6 +110,62 @@ label:active .control {
   background-color: #444444;
 }
 
-input[type="radio"]:checked + label .control {
+#meme1:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(0%);
+}
+
+#meme1:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(0%);
+}
+
+#meme1:checked ~ .controls .meme1 .control {
+  background-color: transparent;
+}
+
+#meme2:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-100%);
+}
+
+#meme2:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-100%);
+}
+
+#meme2:checked ~ .controls .meme2 .control {
+  background-color: transparent;
+}
+
+#meme3:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-200%);
+}
+
+#meme3:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-200%);
+}
+
+#meme3:checked ~ .controls .meme3 .control {
+  background-color: transparent;
+}
+
+#meme4:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-300%);
+}
+
+#meme4:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-300%);
+}
+
+#meme4:checked ~ .controls .meme4 .control {
+  background-color: transparent;
+}
+
+#meme5:checked ~ .meme-container .meme-wrapper {
+  transform: translateX(-400%);
+}
+
+#meme5:checked ~ .meme-text-container .meme-text-wrapper {
+  transform: translateX(-400%);
+}
+
+#meme5:checked ~ .controls .meme5 .control {
   background-color: transparent;
 }
