@@ -169,3 +169,19 @@ label:active .control {
 #meme5:checked ~ .controls .meme5 .control {
   background-color: transparent;
 }
+
+@media screen and (max-width: 768px) {
+  .slider {
+    max-width: 90vw;
+  }
+
+  .controls {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .meme-text-container {
+    width: 100%;
+    order: 1;
+  }
+}
